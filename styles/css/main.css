@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.wrapper {
+  background: url(/images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid aqua;
+  opacity: 0.8;
+}
+.navbar .logo:hover {
+  color: #17a2b8 !important;
+}
+.navbar .logo:hover .fa-code {
+  color: #17a2b8 !important;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.navbar ul li:hover {
+  color: #17a2b8 !important;
+}
+.navbar ul a {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+section#showcase {
+  width: 100%;
+  height: 92.2%;
+  color: white;
+}
+section#showcase .overlay {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section#showcase .overlay h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+section#showcase .overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+section#showcase .overlay .btn {
+  border-radius: 0;
+  padding-inline: 20px;
+  padding-block: 10px;
+}
+
+.register-showcase {
+  padding-block: 50px;
+}
+.register-showcase h2 {
+  color: #17a2b8;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.register-showcase .register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.register-showcase .register-form div.form-group input {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+.register-showcase .register-form .register-btn {
+  width: 100px;
+  border-radius: 0;
+}
+
+small {
+  color: grey;
+  font-size: smaller;
+}
+
+.login-showcase {
+  padding-block: 50px;
+}
+.login-showcase h2 {
+  color: #17a2b8;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.login-showcase .form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login-showcase .form-login div.form-group input {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+.login-showcase .form-login .login-btn {
+  width: 100px;
+  border-radius: 0;
+}
+
+.dashboard-showcase {
+  padding-block: 50px;
+}
+.dashboard-showcase h2 {
+  color: #17a2b8;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.dashboard-showcase .profile-btns {
+  display: flex;
+  gap: 10px;
+}
+.dashboard-showcase .profile-btns a {
+  background-color: rgba(201, 201, 201, 0.244);
+  padding: 5px 20px;
+  border-radius: 0;
+}
+.dashboard-showcase strong {
+  font-weight: bold;
+  font-size: 24px;
+}
+.dashboard-showcase button.btn-danger {
+  border-radius: 0;
+  margin-block: 30px;
+}
+
+.create-profile-showcase {
+  padding-block: 50px;
+}
+.create-profile-showcase h2 {
+  color: #17a2b8;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.create-profile-showcase form input {
+  border: 1px solid gray;
+}
+.create-profile-showcase form .urlBtn {
+  background-color: rgba(201, 201, 201, 0.244);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 0;
+  width: 250px;
+  cursor: pointer;
+}
+.create-profile-showcase form .socialURL {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.create-profile-showcase form .create-btns button {
+  border-radius: 0;
+}
+.create-profile-showcase form .create-btns a {
+  background-color: rgba(201, 201, 201, 0.244);
+  padding: 5px 20px;
+  border-radius: 0;
+}
+
+.add-experience-showcase {
+  padding-block: 50px;
+}
+.add-experience-showcase h2 {
+  color: #17a2b8;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.add-experience-showcase form.add-experience-form input {
+  border: 1px solid gray;
+}
+.add-experience-showcase form.add-experience-form .add-experience-btns button {
+  border-radius: 0;
+}
+.add-experience-showcase form.add-experience-form .add-experience-btns a {
+  background-color: rgba(201, 201, 201, 0.244);
+  padding: 5px 20px;
+  border-radius: 0 !important;
+}/*# sourceMappingURL=main.css.map */
