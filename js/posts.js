@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         img.setAttribute("src", post.avatar);
         img.classList.add("rounded-circle", "mb-3");
         img.addEventListener("click", () => {
+            // localStorage.setItem("userId", `${post.user}`)
             window.location.replace("profile.html");
         });
         postInfo.append(img);
@@ -176,7 +177,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             }).catch((err) => {
                 console.log(err);
             })
-            window.location.replace("/discussion.html")
+            // localStorage.setItem("postId", res.data._id)
+            setTimeout(() => {
+                window.location.replace("/discussion.html")
+            }, 1_500);
         });
 
         btns.append(discussionBtn);

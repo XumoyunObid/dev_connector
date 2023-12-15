@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         userStatus.append(userLocation);
 
         let viewProfileBtn = document.createElement("a");
-        viewProfileBtn.classList.add("btn", "btn-primary");
+        viewProfileBtn.classList.add("btn", "btn-primary", "rounded-0");
         viewProfileBtn.innerText = "View Profile";
         viewProfileBtn.addEventListener("click", () => {
             localStorage.setItem("idToken", `${profile.user._id}`);
