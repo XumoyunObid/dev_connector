@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             window.location.replace("/dashboard.html");
         },3_000)
         } else {
-            alert ("Password did not match")
+            alert ("Password did not match!")
         }
     })
 })

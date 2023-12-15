@@ -3,7 +3,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let addExperienceForm = document.querySelector(".add-experience-form");
     let userToken = localStorage.getItem("userToken");
+    let currentJob = document.querySelector("#currentJob");
+    let jobDescription = document.querySelector("#jobDescription");
 
+    currentJob.addEventListener("change", function() {
+        if (currentJob.checked) {
+            endDate.disabled = true;
+            jobDescription.disabled = true;
+        } else {
+            endDate.disabled = false;
+            jobDescription.disabled = false;
+        }
+    });
 
     addExperienceForm.addEventListener("submit", async (e) => {
         e.preventDefault();
@@ -16,6 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         let endDate = addExperienceForm[5].value;
         let jobDescription = addExperienceForm[6].value;
 
+        
         // console.log(jobTitle);
         // console.log(company);
         // console.log(startDate);

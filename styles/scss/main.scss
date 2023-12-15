@@ -25,6 +25,8 @@ nav {
     position: sticky;
     top: 0;
 }
+
+@import "not-found";
 .d-none {
     display: none;
 }
@@ -280,3 +282,67 @@ small {
         }
     }
 }
+
+.add-education-showcase {
+    padding-block: 50px;
+
+    h2 {
+        color: #17a2b8;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    form.add-education-form {
+        input {
+            border: 1px solid gray;
+        }
+
+        .add-education-btns {
+            button {
+                border-radius: 0;
+            }
+            a {
+                background-color: rgba(201, 201, 201, 0.244);
+                padding: 5px 20px;
+                border-radius: 0 !important;
+            }
+        }
+    }
+}
+
+.profiles-showcase {
+    padding-block: 50px;
+
+    h2 {
+        color: #17a2b8;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    strong {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    button.btn-danger {
+        border-radius: 0;
+        margin-block: 30px;
+    }
+}
+
+.like-btn {
+    width: 60px;
+    height: 60px;
+}
+
+

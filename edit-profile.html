@@ -30,7 +30,7 @@
                 <li><a href="not-found.html">404 Not Found</a></li>
                 <li><a href="profiles.html">Developers</a></li>
                 <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-from-bracket logout" style="color: #ffffff;"></i> Logout</a></li>
             </ul>
         </nav>
 
@@ -40,7 +40,7 @@
                 <h4 class="mb-4"><i class="fa-solid fa-user"></i>Let's get some information to make your</h4>
                 <p>* = required field</p>
 
-                <form class="d-flex flex-column gap-4 create-form">
+                <form class="d-flex flex-column gap-4 edit-form">
                     <div>
                         <select name="prof-status" id="profStatus" class="w-100 p-2" required>
                             <option>* Select professional status</option>
@@ -111,11 +111,11 @@
 
             <div class="d-flex gap-4 align-items-center create-btns">
                 <button class="btn btn-primary ">Submit</button>
-                <a href="dashboard.html">Go Back</a>
+                <a href="dashboard2.html">Go Back</a>
             </div>
                 </form>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="js/create-profile.js"></script>
+        <script src="js/edit-profile.js"></script>
     </body>
 </html>

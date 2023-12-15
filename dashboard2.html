@@ -27,10 +27,10 @@
                 >
             </h3>
             <ul class="text-white d-flex gap-4">
-                <li><a href="">Developers</a></li>
-                <li><a href="">Posts</a></li>
-                <li><a href="register.html"><i class="fa-solid fa-user"></i> Dashboard</a></li>
-                <li><a href="login.html"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> Logout</a></li>
+                <li><a href="profiles.html">Developers</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="dashboard2.html"><i class="fa-solid fa-user"></i> Dashboard</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-from-bracket logout" style="color: #ffffff;"></i> Logout</a></li>
             </ul>
         </nav>
         <div class="container dashboard-showcase">
@@ -42,9 +42,9 @@
             <a class="btn btn-primary " href="create-profile.html">Create Profile</a> -->
 
             <div class="profile-btns">
-                <a class="btn"><i class="fa-solid fa-circle-user" style="color: #17a2b8;"></i> Edit Profile</a>
+                <a href="edit-profile.html" class="btn"><i class="fa-solid fa-circle-user" style="color: #17a2b8;"></i> Edit Profile</a>
                 <a href="add-experience.html" class="btn"><i class="fa-solid fa-user-tie" style="color: #17a2b8;"></i> Add Experience</a>
-                <a class="btn"><i class="fa-solid fa-user-graduate" style="color: #17a2b8;"></i> Add Education</a>
+                <a href="add-education.html" class="btn"><i class="fa-solid fa-user-graduate" style="color: #17a2b8;"></i> Add Education</a>
             </div>
 
             <div class="my-3 ">
@@ -53,8 +53,8 @@
                 <table class="table w-50 ">
                     <thead>
                         <tr>
-                            <th scope="row">Company</th>
-                            <th scope="row">Title</th>
+                            <th>Company</th>
+                            <th>Title</th>
                             <th>Years</th>
                             <th></th>
                         </tr>
@@ -64,9 +64,21 @@
             </div>
             <div class="my-3 ">
                 <strong>Education Credentials</strong>
+
+                <table class="table w-50 ">
+                    <thead>
+                        <tr>
+                            <th>School</th>
+                            <th>Degree</th>
+                            <th>Years</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="education-table-body"></tbody>
+                </table>
             </div>
 
-            <button class="btn btn-danger"><i class="fa-solid fa-user"></i> Delete My Account</button>
+            <button class="btn btn-danger delete-btn"><i class="fa-solid fa-user"></i> Delete My Account</button>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/dashboard2.js"></script>

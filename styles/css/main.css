@@ -27,10 +27,9 @@ nav {
   top: 0;
 }
 
-.d-none {
+@im .d-none {
   display: none;
 }
-
 .wrapper {
   background: url(/images/bg-img.jpg);
   background-repeat: no-repeat;
@@ -236,4 +235,56 @@ small {
   background-color: rgba(201, 201, 201, 0.244);
   padding: 5px 20px;
   border-radius: 0 !important;
+}
+
+.add-education-showcase {
+  padding-block: 50px;
+}
+.add-education-showcase h2 {
+  color: #17a2b8;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.add-education-showcase form.add-education-form input {
+  border: 1px solid gray;
+}
+.add-education-showcase form.add-education-form .add-education-btns button {
+  border-radius: 0;
+}
+.add-education-showcase form.add-education-form .add-education-btns a {
+  background-color: rgba(201, 201, 201, 0.244);
+  padding: 5px 20px;
+  border-radius: 0 !important;
+}
+
+.profiles-showcase {
+  padding-block: 50px;
+}
+.profiles-showcase h2 {
+  color: #17a2b8;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.profiles-showcase img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profiles-showcase strong {
+  font-weight: bold;
+  font-size: 24px;
+}
+.profiles-showcase button.btn-danger {
+  border-radius: 0;
+  margin-block: 30px;
+}
+
+.like-btn {
+  width: 60px;
+  height: 60px;
 }/*# sourceMappingURL=main.css.map */

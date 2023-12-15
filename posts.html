@@ -27,36 +27,24 @@
                 >
             </h3>
             <ul class="text-white d-flex gap-4">
-                <li><a href="profiles">Developers</a></li>
+                <li><a href="profiles.html">Developers</a></li>
                 <li><a href="posts.html">Posts</a></li>
-                <li><a href="register.html"><i class="fa-solid fa-user"></i> Dashboard</a></li>
+                <li><a href="dashboard2.html"><i class="fa-solid fa-user"></i> Dashboard</a></li>
                 <li><a href="login.html"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> Logout</a></li>
             </ul>
         </nav>
         <div class="container dashboard-showcase">
-            <h2>Dashboard</h2>
-            <h4 class="mb-4"><i class="fa-solid fa-user"></i>Welcome <span class="userName"></span></h4>
-
-            <p>You have not yet setup a profile, please add some info</p>
-
-            <a class="btn btn-primary " href="create-profile.html">Create Profile</a>
-
-            <!-- <div class="profile-btns">
-                <a class="btn"><i class="fa-solid fa-circle-user" style="color: #17a2b8;"></i> Edit Profile</a>
-                <a class="btn"><i class="fa-solid fa-user-tie" style="color: #17a2b8;"></i> Add Experince</a>
-                <a class="btn"><i class="fa-solid fa-user-graduate" style="color: #17a2b8;"></i> Add Education</a>
-            </div> -->
-
-            <!-- <div class="my-3 ">
-                <strong>Experience Credentials</strong>
+            <h2>Posts</h2>
+            <h4 class="mb-4"><i class="fa-solid fa-user"></i>Welcome to the community<span class="userName"></span></h4>
+            <div class="bg-primary p-2 text-white mb-3 ">
+                <strong>Say something...</strong>
             </div>
-            <div class="my-3 ">
-                <strong>Education Credentials</strong>
-            </div>
-
-            <button class="btn btn-danger"><i class="fa-solid fa-user"></i> Delete My Account</button> -->
+            <form class="post-form">
+                <textarea class="w-100 p-2 " name="post" id="post" cols="30" rows="5" placeholder="Create a post"></textarea>
+                <button class="btn btn-dark rounded-0 mt-3 ">Submit</button>
+            </form>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="js/dashboard.js"></script>
+        <script src="js/posts.js"></script>
     </body>
 </html>
