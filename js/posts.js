@@ -4,6 +4,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     let postForm = document.querySelector(".post-form");
     let userToken = localStorage.getItem("userToken");
     let container = document.querySelector(".container");
+    let logo = document.querySelector(".logo");
+
+    logo.addEventListener("click", () => {
+        if (userToken) {
+            window.location.replace("/dashboard2.html")
+        }
+    })
+
 
     postForm.addEventListener("submit", async (e) => {
         e.preventDefault();

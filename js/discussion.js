@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     let userToken = localStorage.getItem("userToken");
     let userId = localStorage.getItem("userId");
     let container = document.querySelector(".container");
+    let logo = document.querySelector(".logo");
+
+    logo.addEventListener("click", () => {
+        if (userToken) {
+            window.location.replace("/dashboard2.html")
+        }
+    })
 
     try {
         let { data: discuss } = await axios.get(

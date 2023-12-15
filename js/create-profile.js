@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     let socialURL = document.querySelector(".socialURL");
     let urlBtn = document.querySelector(".urlBtn");
     let userToken = localStorage.getItem("userToken");
+    let logo = document.querySelector(".logo");
+
+    logo.addEventListener("click", () => {
+        if (userToken) {
+            window.location.replace("/dashboard2.html")
+        }
+    })
 
     urlBtn.addEventListener("click", () => {
         socialURL.classList.toggle("d-none");

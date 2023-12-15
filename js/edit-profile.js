@@ -10,6 +10,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         window.location.replace("/login.html");
     }
 
+    let logo = document.querySelector(".logo");
+
+    logo.addEventListener("click", () => {
+        if (userToken) {
+            window.location.replace("/dashboard2.html")
+        }
+    })
+
     
     logOutBtn.addEventListener("click", () => {
         if (!userToken) {

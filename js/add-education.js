@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     let userToken = localStorage.getItem("userToken");
     let currentSchool = document.querySelector("#currentSchool");
     let programDescription = document.querySelector("#programDescription");
+    let logo = document.querySelector(".logo");
+
+    logo.addEventListener("click", () => {
+        if (userToken) {
+            window.location.replace("/dashboard2.html")
+        }
+    })
 
     currentSchool.addEventListener("change", function() {
         if (currentSchool.checked) {
@@ -28,10 +35,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         let endDate = addEducationForm[5].value;
         let programDescription = addEducationForm[6].value;
 
-        // if (currentJob.checked == true) {
-        //     endDate.disabled = true;
-        //     jobDescription.disabled = true;
-        // }
         
         // console.log(jobTitle);
         // console.log(company);

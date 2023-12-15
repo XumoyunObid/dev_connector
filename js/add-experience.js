@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     let userToken = localStorage.getItem("userToken");
     let currentJob = document.querySelector("#currentJob");
     let jobDescription = document.querySelector("#jobDescription");
+    let logo = document.querySelector(".logo");
+
+    logo.addEventListener("click", () => {
+        if (userToken) {
+            window.location.replace("/dashboard2.html")
+        }
+    })
 
     currentJob.addEventListener("change", function() {
         if (currentJob.checked) {

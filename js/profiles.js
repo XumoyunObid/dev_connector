@@ -3,6 +3,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let userToken = localStorage.getItem("userToken");
     let container = document.querySelector(".container");
+    let logo = document.querySelector(".logo");
+
+    logo.addEventListener("click", () => {
+        if (userToken) {
+            window.location.replace("/dashboard2.html")
+        }
+    })
 
     let { data: profiles } = await axios.get("/profile", {
         headers: {
@@ -50,9 +57,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         userStatus.append(userLocation);
 
         let viewProfileBtn = document.createElement("a");
-        viewProfileBtn.setAttribute("href", "/profile.html");
         viewProfileBtn.classList.add("btn", "btn-primary");
         viewProfileBtn.innerText = "View Profile";
+        viewProfileBtn.addEventListener("click", () => {
+            localStorage.setItem("idToken", `${profile.user._id}`);
+            window.location.replace("/profile.html");
+        })
         userStatus.append(viewProfileBtn);
 
         let skillsList = document.createElement("ul");
